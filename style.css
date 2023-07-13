@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: gray;
+  padding: 16px;
+}
+
+.titulo{
+  font-size: 24px;
+}
+
+.icone{
+  width: 40px;
+}
+
+.pesquisa{
+  font-size: 18px;
+  border: 0px;
+}
+
+.produtos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.produto{
+  width: 100%;
+  cursor: pointer;
+}
+
+.produto:hover{
+  background-color: lightgreen;
+}
+
+.produto img{
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
